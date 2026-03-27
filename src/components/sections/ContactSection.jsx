@@ -5,7 +5,7 @@ import SectionHeading from "../ui/SectionHeading";
 
 export default function ContactSection() {
   return (
-    <section className="relative py-28" id="contact">
+    <section className="relative py-16 sm:py-20 md:py-28" id="contact">
       <div className="container-x grid gap-10 lg:grid-cols-12 lg:items-start">
         <div className="lg:col-span-5">
           <SectionHeading

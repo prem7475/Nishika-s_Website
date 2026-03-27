@@ -6,8 +6,8 @@ import SectionHeading from "../ui/SectionHeading";
 
 export default function About() {
   return (
-    <section className="relative py-28" id="about">
-      <div className="container-x grid gap-10 lg:grid-cols-12 lg:items-center">
+    <section className="relative py-16 sm:py-20 md:py-28" id="about">
+      <div className="container-x grid gap-6 sm:gap-10 lg:grid-cols-12 lg:items-center">
         <motion.div
           className="lg:col-span-5"
           initial={{ opacity: 0, y: 18 }}

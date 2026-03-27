@@ -5,7 +5,7 @@ import SectionHeading from "../ui/SectionHeading";
 
 export default function Testimonials() {
   return (
-    <section className="relative py-28" id="testimonials">
+    <section className="relative py-16 sm:py-20 md:py-28" id="testimonials">
       <div className="container-x">
         <SectionHeading
           eyebrow="TESTIMONIALS"

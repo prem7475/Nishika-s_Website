@@ -8,7 +8,7 @@ import TiltCard from "../ui/TiltCard";
 
 export default function WorkShowcase() {
   return (
-    <section className="relative py-28" id="work">
+    <section className="relative py-16 sm:py-20 md:py-28" id="work">
       <div className="container-x">
         <div className="flex flex-col items-start justify-between gap-8 md:flex-row md:items-end">
           <SectionHeading

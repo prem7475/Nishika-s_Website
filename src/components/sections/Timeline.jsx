@@ -5,7 +5,7 @@ import SectionHeading from "../ui/SectionHeading";
 
 export default function Timeline() {
   return (
-    <section className="relative py-28" id="journey">
+    <section className="relative py-16 sm:py-20 md:py-28" id="journey">
       <div className="container-x">
         <SectionHeading
           eyebrow="EXPERIENCE / EDUCATION"

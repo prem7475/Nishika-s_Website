@@ -27,12 +27,12 @@ export default function Hero() {
         <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/40 to-black" />
       </div>
 
-      <div className="container-x relative z-10 pt-36 pb-28">
+      <div className="container-x relative z-10 pt-16 pb-16 sm:pt-24 md:pt-36 md:pb-28">
         <motion.div
           data-hero-content
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
+          transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
         >
           <div className="flex flex-wrap items-center gap-3">
             <Badge>{profile.headline.toUpperCase()}</Badge>
@@ -41,18 +41,18 @@ export default function Hero() {
             </span>
           </div>
 
-          <h1 className="mt-8 font-display text-6xl leading-[0.95] tracking-wide sm:text-7xl md:text-8xl">
+          <h1 className="mt-6 sm:mt-8 font-display text-4xl sm:text-6xl md:text-7xl lg:text-8xl leading-[0.95] tracking-wide">
             <span className="block text-white">{profile.name.split(" ")[0]}</span>
             <span className="block text-gradient-gold">
               {profile.name.split(" ").slice(1).join(" ")}
             </span>
           </h1>
 
-          <p className="mt-6 max-w-2xl text-base leading-relaxed text-white/70 sm:text-lg">
+          <p className="mt-4 sm:mt-6 max-w-2xl text-sm sm:text-base leading-relaxed text-white/70 md:text-lg">
             {profile.subheadline}
           </p>
 
-          <div className="mt-10 flex flex-wrap gap-4">
+          <div className="mt-6 sm:mt-10 flex flex-wrap gap-3 sm:gap-4">
             <Link to="/work" className="btn-primary" data-cursor="hover">
               View Portfolio
             </Link>
@@ -61,28 +61,28 @@ export default function Hero() {
             </Link>
           </div>
 
-          <div className="mt-10 flex items-center gap-4">
-            <div className="h-24 w-24 overflow-hidden rounded-full border border-white/15 shadow-xl hidden sm:block">
+          <div className="mt-6 sm:mt-10 flex items-center gap-4">
+            <div className="h-20 w-20 sm:h-24 sm:w-24 overflow-hidden rounded-full border border-white/15 shadow-xl hidden sm:block">
               <img src="/photo.png" alt="Nishika Sadane" className="h-full w-full object-cover" />
             </div>
           </div>
 
-          <div className="mt-14 grid gap-4 sm:grid-cols-3">
-            <div className="glass rounded-3xl border border-white/10 p-5 shadow-glow">
+          <div className="mt-8 sm:mt-14 grid gap-3 sm:gap-4 grid-cols-1 sm:grid-cols-3">
+            <div className="glass rounded-2xl sm:rounded-3xl border border-white/10 p-4 sm:p-5 shadow-glow">
               <div className="text-xs tracking-[0.26em] text-white/45">FOCUS</div>
-              <div className="mt-2 text-sm text-white/80">
+              <div className="mt-2 text-xs sm:text-sm text-white/80">
                 Financial decision-making
               </div>
             </div>
-            <div className="glass rounded-3xl border border-white/10 p-5 shadow-glow">
+            <div className="glass rounded-2xl sm:rounded-3xl border border-white/10 p-4 sm:p-5 shadow-glow">
               <div className="text-xs tracking-[0.26em] text-white/45">STYLE</div>
-              <div className="mt-2 text-sm text-white/80">
+              <div className="mt-2 text-xs sm:text-sm text-white/80">
                 Clean analysis • clear narrative
               </div>
             </div>
-            <div className="glass rounded-3xl border border-white/10 p-5 shadow-glow">
+            <div className="glass rounded-2xl sm:rounded-3xl border border-white/10 p-4 sm:p-5 shadow-glow">
               <div className="text-xs tracking-[0.26em] text-white/45">OUTPUT</div>
-              <div className="mt-2 text-sm text-white/80">
+              <div className="mt-2 text-xs sm:text-sm text-white/80">
                 Reports, dashboards, briefs
               </div>
             </div>
@@ -90,10 +90,10 @@ export default function Hero() {
         </motion.div>
 
         <motion.div
-          className="mt-20 flex items-center gap-3 text-xs tracking-[0.28em] text-white/40"
+          className="mt-10 sm:mt-20 flex items-center gap-3 text-xs tracking-[0.28em] text-white/40"
           initial={{ opacity: 0, y: 8 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.45, duration: 0.8 }}
+          transition={{ delay: 0.8, duration: 1 }}
         >
           <span className="h-px w-10 bg-white/15" />
           SCROLL

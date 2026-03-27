@@ -109,7 +109,7 @@ function Icon({ i }) {
 
 export default function Expertise() {
   return (
-    <section className="relative py-28" id="expertise">
+    <section className="relative py-16 sm:py-20 md:py-28" id="expertise">
       <div className="container-x">
         <SectionHeading
           eyebrow="SERVICES / EXPERTISE"
