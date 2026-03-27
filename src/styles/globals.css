@@ -256,12 +256,9 @@ html.lenis {
 }
 
 @media (pointer: fine) {
-  body {
-    cursor: none;
-  }
-
+  body,
   a,
   button {
-    cursor: none;
+    cursor: default;
   }
 }
