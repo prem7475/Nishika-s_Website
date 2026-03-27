@@ -7,23 +7,8 @@ const variants = {
 };
 
 export default function CustomCursor() {
-  const [enabled, setEnabled] = useState(false);
-  const [mode, setMode] = useState("default");
-
-  const x = useMotionValue(-100);
-  const y = useMotionValue(-100);
-
-  const left = useSpring(x, { stiffness: 700, damping: 55, mass: 0.18 });
-  const top = useSpring(y, { stiffness: 700, damping: 55, mass: 0.18 });
-
-  useEffect(() => {
-    const mql = window.matchMedia("(pointer: fine)");
-    const sync = () => setEnabled(Boolean(mql.matches));
-    sync();
-
-    mql.addEventListener?.("change", sync);
-    return () => mql.removeEventListener?.("change", sync);
-  }, []);
+  // Disable custom cursor animation. Use default system cursor behavior.
+  return null;
 
   useEffect(() => {
     if (!enabled) return;
