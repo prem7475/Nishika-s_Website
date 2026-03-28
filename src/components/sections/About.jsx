@@ -1,5 +1,5 @@
 ﻿import { motion } from "framer-motion";
-import { about, stats } from "../../data/siteContent";
+import { about, profile, stats } from "../../data/siteContent";
 import GlowCard from "../ui/GlowCard";
 import ProfilePortrait from "../ui/ProfilePortrait";
 import SectionHeading from "../ui/SectionHeading";
@@ -19,7 +19,11 @@ export default function About() {
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(255,255,255,0.06),transparent_60%)]" />
             <div className="relative">
               <div className="flex items-center justify-center">
-                <ProfilePortrait />
+                <ProfilePortrait
+                  src={profile.portraitSrc}
+                  alt={profile.name}
+                  label={profile.availability}
+                />
               </div>
 
               <motion.div
@@ -30,11 +34,11 @@ export default function About() {
 
               <div className="mt-12 rounded-2xl border border-white/10 bg-white/5 p-5 backdrop-blur-xl">
                 <div className="text-xs tracking-[0.26em] text-white/55">
-                  ABOUT THE APPROACH
+                  MY APPROACH
                 </div>
                 <div className="mt-2 text-sm leading-relaxed text-white/75">
-                  Premium visuals, calm hierarchy — and finance work that reads
-                  like a real deliverable.
+                  Clean UI, solid fundamentals, and a strong focus on usability
+                  and performance.
                 </div>
               </div>
             </div>
@@ -42,10 +46,10 @@ export default function About() {
         </motion.div>
 
         <div className="lg:col-span-7">
-          <SectionHeading
-            eyebrow="ABOUT"
-            title={about.title}
-            subtitle="A premium portfolio should feel like an agency site — but the work must still be finance-first: structured, clear, decision-ready."
+            <SectionHeading
+              eyebrow="ABOUT"
+              title={about.title}
+            subtitle="I enjoy building modern, responsive web experiences and learning by shipping real projects."
           />
 
           <div className="mt-8 space-y-4 text-sm leading-relaxed text-white/70 sm:text-base">

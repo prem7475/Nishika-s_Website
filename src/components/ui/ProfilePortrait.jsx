@@ -12,7 +12,8 @@ const sizeMap = {
 export default function ProfilePortrait({
   className,
   size = "lg",
-  src = "/photo.png",
+  src = "/face.jpeg",
+  alt = "Profile photo",
   label = "OPEN TO WORK",
 }) {
   const classes = useMemo(() => sizeMap[size] ?? sizeMap.lg, [size]);
@@ -27,7 +28,7 @@ export default function ProfilePortrait({
       <div className="relative h-full w-full overflow-hidden rounded-full border border-white/10 bg-white/5">
         <img
           src={imgSrc}
-          alt="Nishika Sadane"
+          alt={alt}
           className="h-full w-full object-cover"
           onError={() => setImgSrc(fallbackPortrait)}
           loading="lazy"

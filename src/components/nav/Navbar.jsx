@@ -1,19 +1,23 @@
 ﻿import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { Link, NavLink, useLocation } from "react-router-dom";
+import { profile } from "../../data/siteContent";
 
 const navItems = [
+  { label: "Intro", to: "/#top" },
   { label: "About", to: "/#about" },
-  { label: "Expertise", to: "/#expertise" },
-  { label: "Work", to: "/#work" },
+  { label: "Services", to: "/#expertise" },
+  { label: "Works", to: "/#work" },
   { label: "Journey", to: "/#journey" },
-  { label: "Testimonials", to: "/#testimonials" },
-  { label: "Contact", to: "/contact" },
+  { label: "Highlights", to: "/#testimonials" },
+  { label: "Say Hello", to: "/contact" },
 ];
 
 export default function Navbar() {
   const location = useLocation();
   const [open, setOpen] = useState(false);
+  const [firstName, ...restName] = profile.name.split(" ");
+  const lastName = restName.join(" ");
 
   useEffect(() => {
     setOpen(false);
@@ -26,11 +30,13 @@ export default function Navbar() {
           <div className="mt-2 sm:mt-4 flex items-center justify-between rounded-xl sm:rounded-2xl border border-white/10 bg-white/5 px-3 sm:px-4 py-2 sm:py-3 backdrop-blur-xl">
             <Link to="/" className="flex items-baseline gap-2" data-cursor="hover">
               <span className="font-display text-lg sm:text-xl tracking-wide text-gradient-gold">
-                Nishika
+                {firstName}
               </span>
-              <span className="hidden text-xs tracking-[0.25em] text-white/45 sm:inline">
-                SADANE
-              </span>
+              {lastName ? (
+                <span className="hidden text-xs tracking-[0.25em] text-white/45 sm:inline">
+                  {lastName.toUpperCase()}
+                </span>
+              ) : null}
             </Link>
 
             <nav className="hidden items-center gap-6 md:flex">
@@ -57,7 +63,7 @@ export default function Navbar() {
 
             <div className="flex items-center gap-2 sm:gap-3 md:hidden">
               <Link to="/contact" className="btn-ghost text-xs sm:text-sm" data-cursor="hover">
-                Contact
+                Say Hello
               </Link>
 
               <button
@@ -139,7 +145,7 @@ export default function Navbar() {
               </motion.div>
 
               <div className="mt-8 sm:mt-10 text-xs tracking-[0.28em] text-white/40">
-                FINANCE • STRATEGY • CLARITY
+                {profile.tagline}
               </div>
             </div>
           </motion.div>

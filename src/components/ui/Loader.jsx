@@ -1,5 +1,6 @@
 ﻿import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useState } from "react";
+import { profile } from "../../data/siteContent";
 
 export default function Loader() {
   const [open, setOpen] = useState(true);
@@ -22,10 +23,10 @@ export default function Loader() {
             <div className="absolute -inset-20 rounded-full bg-[radial-gradient(circle_at_center,rgba(200,168,90,0.22),transparent_55%)] blur-3xl" />
             <div className="relative">
               <div className="font-display text-4xl tracking-wide text-gradient-gold">
-                Nishika
+                {profile.name}
               </div>
               <div className="mt-2 text-sm tracking-[0.25em] text-white/60">
-                FINANCE • STRATEGY • CLARITY
+                {profile.tagline}
               </div>
 
               <div className="mt-8 h-px w-full overflow-hidden rounded-full bg-white/10">

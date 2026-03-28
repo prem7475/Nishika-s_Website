@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <defs>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#E9D8A6" />
+      <stop offset="0.45" stop-color="#C8A85A" />
+      <stop offset="1" stop-color="#9A7A36" />
+    </linearGradient>
+    <radialGradient id="halo" cx="30%" cy="20%" r="80%">
+      <stop offset="0" stop-color="rgba(200,168,90,0.24)" />
+      <stop offset="0.55" stop-color="rgba(200,168,90,0.10)" />
+      <stop offset="1" stop-color="rgba(200,168,90,0)" />
+    </radialGradient>
+    <filter id="blur" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="18" />
+    </filter>
+  </defs>
+
+  <rect width="1200" height="800" rx="44" fill="#050608" />
+  <rect width="1200" height="800" rx="44" fill="url(#halo)" />
+
+  <g filter="url(#blur)" opacity="0.75">
+    <circle cx="260" cy="160" r="170" fill="rgba(200,168,90,0.22)" />
+    <circle cx="980" cy="190" r="200" fill="rgba(255,255,255,0.08)" />
+  </g>
+
+  <g transform="translate(90 90)">
+    <rect width="1020" height="620" rx="36" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.10)" />
+
+    <g opacity="0.18" stroke="#FFFFFF" stroke-width="1">
+      <path d="M80 220H940" />
+      <path d="M80 280H940" />
+      <path d="M80 340H940" />
+      <path d="M80 400H940" />
+    </g>
+
+    <g transform="translate(80 130)">
+      <text x="0" y="0" font-family="Plus Jakarta Sans, system-ui" font-size="14" letter-spacing="6" fill="rgba(255,255,255,0.55)">
+        SMART PARKING SYSTEM
+      </text>
+      <text x="0" y="44" font-family="Cormorant Garamond, serif" font-size="56" font-weight="700" fill="url(#gold)">
+        PARKNEST
+      </text>
+      <text x="0" y="84" font-family="Plus Jakarta Sans, system-ui" font-size="16" fill="rgba(255,255,255,0.70)">
+        IoT + real-time availability
+      </text>
+    </g>
+
+    <g transform="translate(80 460)">
+      <rect width="420" height="120" rx="26" fill="rgba(0,0,0,0.26)" stroke="rgba(255,255,255,0.10)" />
+      <text x="26" y="52" font-family="Plus Jakarta Sans, system-ui" font-size="12" letter-spacing="6" fill="rgba(255,255,255,0.55)">
+        STACK
+      </text>
+      <text x="26" y="88" font-family="Plus Jakarta Sans, system-ui" font-size="16" fill="rgba(233,216,166,0.85)">
+        React • Node • MongoDB • IoT
+      </text>
+    </g>
+  </g>
+</svg>
+

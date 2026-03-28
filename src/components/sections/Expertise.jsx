@@ -113,8 +113,8 @@ export default function Expertise() {
       <div className="container-x">
         <SectionHeading
           eyebrow="SERVICES / EXPERTISE"
-          title="Agency‑style. Finance‑first."
-          subtitle="Positioned like a business website — because your value is the deliverable. Each card is designed to feel premium, with glow interactions and crisp hierarchy."
+          title="Capabilities that help ship"
+          subtitle="From UI/UX and web development to core programming fundamentals - I like building things that are clean, usable, and reliable."
         />
 
         <div className="mt-12 grid gap-5 md:grid-cols-2">
@@ -158,7 +158,7 @@ export default function Expertise() {
                 <div className="mt-8 h-px w-full bg-gradient-to-r from-transparent via-white/12 to-transparent" />
 
                 <div className="mt-5 text-xs tracking-[0.25em] text-white/50 group-hover:text-gold-200/80">
-                  DELIVERABLE-READY OUTPUT
+                  BUILD • TEST • SHIP
                 </div>
               </GlowCard>
             </motion.div>

@@ -9,8 +9,8 @@ export default function Timeline() {
       <div className="container-x">
         <SectionHeading
           eyebrow="EXPERIENCE / EDUCATION"
-          title="A timeline built for credibility"
-          subtitle="A vertical journey reveal — designed like a premium agency case study, but anchored in finance."
+          title="Work & Education"
+          subtitle="A quick timeline of my experience, internships, and education."
         />
 
         <div className="relative mt-14">

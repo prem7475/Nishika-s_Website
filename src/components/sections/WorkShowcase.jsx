@@ -13,12 +13,12 @@ export default function WorkShowcase() {
         <div className="flex flex-col items-start justify-between gap-8 md:flex-row md:items-end">
           <SectionHeading
             eyebrow="PORTFOLIO / WORK"
-            title="Finance work — presented like a product"
-            subtitle="Clean visuals, strong hierarchy, and believable finance deliverables. Hover for tilt + glow."
+            title="Featured projects"
+            subtitle="A selection of projects I've built recently. Hover for tilt + glow."
           />
 
           <Link to="/work" className="btn-ghost" data-cursor="hover">
-            Explore all work
+            Explore all projects
           </Link>
         </div>
 
@@ -63,7 +63,7 @@ export default function WorkShowcase() {
                     <div className="mt-7 h-px w-full bg-white/10" />
 
                     <div className="mt-5 flex items-center justify-between text-xs tracking-[0.22em] text-white/50">
-                      <span>CASE STUDY FORMAT</span>
+                      <span>PROJECT</span>
                       <span className="text-gold-200/80">VIEW</span>
                     </div>
                   </div>

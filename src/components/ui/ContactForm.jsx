@@ -27,7 +27,7 @@ export default function ContactForm() {
   const [message, setMessage] = useState("");
 
   const mailto = useMemo(() => {
-    const subject = encodeURIComponent("Portfolio inquiry — Nishika Sadane");
+    const subject = encodeURIComponent(`Portfolio inquiry - ${profile.name}`);
     const body = encodeURIComponent(
       `Name: ${name}\nEmail: ${email}\n\n${message}`,
     );
@@ -80,15 +80,28 @@ export default function ContactForm() {
             >
               EMAIL
             </a>
-            <a
-              href={profile.linkedin}
-              target="_blank"
-              rel="noreferrer"
-              className="hover:text-white"
-              data-cursor="hover"
-            >
-              LINKEDIN
-            </a>
+            {profile.linkedin ? (
+              <a
+                href={profile.linkedin}
+                target="_blank"
+                rel="noreferrer"
+                className="hover:text-white"
+                data-cursor="hover"
+              >
+                LINKEDIN
+              </a>
+            ) : null}
+            {profile.github ? (
+              <a
+                href={profile.github}
+                target="_blank"
+                rel="noreferrer"
+                className="hover:text-white"
+                data-cursor="hover"
+              >
+                GITHUB
+              </a>
+            ) : null}
           </div>
         </div>
 

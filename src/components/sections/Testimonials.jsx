@@ -8,9 +8,9 @@ export default function Testimonials() {
     <section className="relative py-16 sm:py-20 md:py-28" id="testimonials">
       <div className="container-x">
         <SectionHeading
-          eyebrow="TESTIMONIALS"
-          title="Client-style feedback — premium & believable"
-          subtitle="Designed like a digital agency site, written like real feedback: clarity, structure, and decision value." 
+          eyebrow="HIGHLIGHTS"
+          title="Certifications & highlights"
+          subtitle="A few quick highlights from my journey." 
         />
 
         <div className="mt-12 grid gap-6 md:grid-cols-3">

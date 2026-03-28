@@ -54,36 +54,41 @@ export default function Hero() {
 
           <div className="mt-6 sm:mt-10 flex flex-wrap gap-3 sm:gap-4">
             <Link to="/work" className="btn-primary" data-cursor="hover">
-              View Portfolio
+              View Projects
             </Link>
             <Link to="/contact" className="btn-ghost" data-cursor="hover">
-              Contact
+              Say Hello
             </Link>
           </div>
 
           <div className="mt-6 sm:mt-10 flex items-center gap-4">
             <div className="h-20 w-20 sm:h-24 sm:w-24 overflow-hidden rounded-full border border-white/15 shadow-xl hidden sm:block">
-              <img src="/photo.png" alt="Nishika Sadane" className="h-full w-full object-cover" />
+              <img
+                src={profile.portraitSrc}
+                alt={profile.name}
+                className="h-full w-full object-cover"
+                loading="lazy"
+              />
             </div>
           </div>
 
           <div className="mt-8 sm:mt-14 grid gap-3 sm:gap-4 grid-cols-1 sm:grid-cols-3">
             <div className="glass rounded-2xl sm:rounded-3xl border border-white/10 p-4 sm:p-5 shadow-glow">
-              <div className="text-xs tracking-[0.26em] text-white/45">FOCUS</div>
+              <div className="text-xs tracking-[0.26em] text-white/45">ROLE</div>
               <div className="mt-2 text-xs sm:text-sm text-white/80">
-                Financial decision-making
+                {profile.headline}
               </div>
             </div>
             <div className="glass rounded-2xl sm:rounded-3xl border border-white/10 p-4 sm:p-5 shadow-glow">
-              <div className="text-xs tracking-[0.26em] text-white/45">STYLE</div>
+              <div className="text-xs tracking-[0.26em] text-white/45">BASED IN</div>
               <div className="mt-2 text-xs sm:text-sm text-white/80">
-                Clean analysis • clear narrative
+                {profile.location}
               </div>
             </div>
             <div className="glass rounded-2xl sm:rounded-3xl border border-white/10 p-4 sm:p-5 shadow-glow">
-              <div className="text-xs tracking-[0.26em] text-white/45">OUTPUT</div>
+              <div className="text-xs tracking-[0.26em] text-white/45">STACK</div>
               <div className="mt-2 text-xs sm:text-sm text-white/80">
-                Reports, dashboards, briefs
+                React • Node • MongoDB
               </div>
             </div>
           </div>
